@@ -1,0 +1,29 @@
+onboarding = false
+
+[keys]
+# Alt-based prefix (Herdr requires a chord, not bare "alt"; right-alt alone
+# can't be isolated on Windows since AltGr arrives as Ctrl+Alt).
+prefix = "alt+\\"
+
+# Quick swap: sidebar <-> terms/tabs
+toggle_sidebar = "prefix+b"
+workspace_picker = "prefix+w"
+
+# Fast workspace cycling
+previous_workspace = "prefix+comma"
+next_workspace     = "prefix+period"
+
+# Tab cycling
+previous_tab = "prefix+p"
+next_tab     = "prefix+n"
+switch_tab   = "prefix+1..9"
+
+# Quick back-and-forth between last two panes (term <-> editor)
+last_pane = "prefix+tab"
+
+[ui.toast]
+delivery = "terminal"
+
+[theme]
+name = "kanagawa"
+auto_switch = false
