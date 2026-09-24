@@ -1,210 +1,221 @@
 [
-  /********************************************************************************************
-  * NOTE: Vim Mode Normal Editor Settings
-  ********************************************************************************************/
-  {
-    "context": "Editor && vim_mode == normal && !menu",
-    "bindings": {
-      "space o p s": "zed::OpenProjectSettings",
+	/********************************************************************************************
+	* NOTE: Vim Mode Normal Editor Settings
+	********************************************************************************************/
+	{
+		"context": "Editor && vim_mode == normal && !menu",
+		"bindings": {
+			"space o p s": "zed::OpenProjectSettings",
 
-      "r": "vim::Redo",
-      "t t": "editor::DuplicateLineDown",
+			"r": "vim::Redo",
+			"t t": "editor::DuplicateLineDown",
 
-      "space f w": [
-        "workspace::SendKeystrokes",
-        "g g = G ` `"
-      ],
+			"space f w": [
+				"workspace::SendKeystrokes",
+				"g g = G ` `"
+			],
 
-      "space w": "workspace::Save",
+			"space w": "workspace::Save",
 
-      "space s": "pane::SplitRight",
-      "space v s": "pane::SplitDown",
+			"space s": "pane::SplitRight",
+			"space v s": "pane::SplitDown",
 
-      "space m h": [
-        "workspace::MoveItemToPaneInDirection",
-        { "direction": "left" }
-      ],
-      "space m l": [
-        "workspace::MoveItemToPaneInDirection",
-        { "direction": "right" }
-      ],
-      "space m k": [
-        "workspace::MoveItemToPaneInDirection",
-        { "direction": "up" }
-      ],
-      "space m j": [
-        "workspace::MoveItemToPaneInDirection",
-        { "direction": "down" }
-      ],
+			"space m h": [
+				"workspace::MoveItemToPaneInDirection",
+	{ "direction": "left" }
+			],
+			"space m l": [
+				"workspace::MoveItemToPaneInDirection",
+	{ "direction": "right" }
+			],
+			"space m k": [
+				"workspace::MoveItemToPaneInDirection",
+	{ "direction": "up" }
+			],
+			"space m j": [
+				"workspace::MoveItemToPaneInDirection",
+	{ "direction": "down" }
+			],
 
-      "space y": "workspace::ActivatePaneRight",
-      "space t": "workspace::ActivatePaneLeft",
-      "space v k": "workspace::ActivatePaneUp",
-      "space v j": "workspace::ActivatePaneDown",
+			"space y": "workspace::ActivatePaneRight",
+			"space t": "workspace::ActivatePaneLeft",
+			"space v k": "workspace::ActivatePaneUp",
+			"space v j": "workspace::ActivatePaneDown",
 
-      "g g": "vim::StartOfDocument",
-      "G": "vim::EndOfDocument",
+			"g g": "vim::StartOfDocument",
+			"G": "vim::EndOfDocument",
 
-      "space f f": "file_finder::Toggle",
+			"space f f": "file_finder::Toggle",
 
-      "space f c": [
-        "workspace::SendKeystrokes",
-        "ctrl-shift-f"
-      ],
+			"space f c": [
+				"workspace::SendKeystrokes",
+				"ctrl-shift-f"
+			],
 
-      "space f g": [
-        "workspace::SendKeystrokes",
-        "ctrl-alt-f"
-      ],
+			"space f g": [
+				"workspace::SendKeystrokes",
+				"ctrl-alt-f"
+			],
 
-      "space e": "diagnostics::Deploy",
+			"space e": "diagnostics::Deploy",
 
-      "g d": "editor::GoToDefinition",
+			"g d": "editor::GoToDefinition",
 
-      "space b u f": "tab_switcher::Toggle",
-      "space b t": "task::Spawn",
-      "space h": "tab_switcher::Toggle",
+			"space b u f": "tab_switcher::Toggle",
+			"space b t": "task::Spawn",
+			"space h": "tab_switcher::Toggle",
 
-      "space j": "pane::ActivateNextItem",
-      "space k": "pane::ActivatePreviousItem",
+			"space j": "pane::ActivateNextItem",
+			"space k": "pane::ActivatePreviousItem",
 
-      "space 1": ["pane::ActivateItem", 0],
-      "space 2": ["pane::ActivateItem", 1],
-      "space 3": ["pane::ActivateItem", 2],
-      "space 4": ["pane::ActivateItem", 3],
-      "space 5": ["pane::ActivateItem", 4],
-      "space 6": ["pane::ActivateItem", 5],
-      "space 7": ["pane::ActivateItem", 6],
-      "space 8": ["pane::ActivateItem", 7],
-      "space 9": ["pane::ActivateItem", 8],
+			"space 1": ["pane::ActivateItem", 0],
+			"space 2": ["pane::ActivateItem", 1],
+			"space 3": ["pane::ActivateItem", 2],
+			"space 4": ["pane::ActivateItem", 3],
+			"space 5": ["pane::ActivateItem", 4],
+			"space 6": ["pane::ActivateItem", 5],
+			"space 7": ["pane::ActivateItem", 6],
+			"space 8": ["pane::ActivateItem", 7],
+			"space 9": ["pane::ActivateItem", 8],
 
-      "ctrl-\\": "terminal_panel::Toggle",
+			"ctrl-\\": "terminal_panel::Toggle",
 
-      "space n": "project_panel::Toggle",
+			"space n": "project_panel::Toggle",
 
-      "s": [
-        "vim::PushSneak",
-        {}
-      ],
+			"s": [
+				"vim::PushSneak",
+	{}
+			],
 
-      "shift-s": [
-        "vim::PushSneakBackward",
-        {}
-      ],
+			"shift-s": [
+				"vim::PushSneakBackward",
+	{}
+			],
 
-      "] f": "vim::NextMethodStart",
-      "] F": "vim::NextMethodEnd",
-      "[ f": "vim::PreviousMethodStart"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal",
-    "unbind": {
-      "f1": "command_palette::Toggle"
-    }
-  },
+			"] f": "vim::NextMethodStart",
+			"] F": "vim::NextMethodEnd",
+			"[ f": "vim::PreviousMethodStart"
+		}
+	},
+	{
+		"context": "Editor && vim_mode == normal",
+		"unbind": {
+			"f1": "command_palette::Toggle"
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: Vim Mode Visual Mode Editor Settings
-  ********************************************************************************************/
-  {
-    "context": "Editor && vim_mode == visual && !menu",
-    "bindings": {
-      "ctrl-j": "editor::MoveLineDown",
-      "ctrl-k": "editor::MoveLineUp",
+	/********************************************************************************************
+	* NOTE: Vim Mode Visual Mode Editor Settings
+	********************************************************************************************/
+	{
+		"context": "Editor && vim_mode == visual && !menu",
+		"bindings": {
+			"ctrl-j": "editor::MoveLineDown",
+			"ctrl-k": "editor::MoveLineUp",
 
-      "space w": "workspace::Save",
-      "space s": "pane::SplitRight",
-      "space v s": "pane::SplitDown",
+			"space w": "workspace::Save",
+			"space s": "pane::SplitRight",
+			"space v s": "pane::SplitDown",
 
-      "space y": "workspace::ActivatePaneRight",
-      "space t": "workspace::ActivatePaneLeft",
-      "space v k": "workspace::ActivatePaneUp",
-      "space v j": "workspace::ActivatePaneDown",
+			"space y": "workspace::ActivatePaneRight",
+			"space t": "workspace::ActivatePaneLeft",
+			"space v k": "workspace::ActivatePaneUp",
+			"space v j": "workspace::ActivatePaneDown",
 
-      "g g": "vim::StartOfDocument",
-      "G": "vim::EndOfDocument",
+			"g g": "vim::StartOfDocument",
+			"G": "vim::EndOfDocument",
 
-      "s": [
-        "vim::PushSneak",
-        {}
-      ],
+			"s": [
+				"vim::PushSneak",
+	{}
+			],
 
-      "shift-s": [
-        "vim::PushSneakBackward",
-        {}
-      ]
-    }
-  },
+			"shift-s": [
+				"vim::PushSneakBackward",
+	{}
+			]
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: Vim Mode Insert Mode Editor Settings
-  ********************************************************************************************/
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "alt-e": "editor::ShowCompletions",
-      "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrevious"
-    }
-  },
+	/********************************************************************************************
+	* NOTE: Vim Mode Insert Mode Editor Settings
+	********************************************************************************************/
+	{
+		"context": "Editor && vim_mode == insert",
+		"bindings": {
+			"alt-e": "editor::ShowCompletions",
+			"ctrl-j": "editor::ContextMenuNext",
+			"ctrl-k": "editor::ContextMenuPrevious"
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: Terminal Settings
-  ********************************************************************************************/
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-\\": "terminal_panel::Toggle"
-    }
-  },
+	/********************************************************************************************
+	* NOTE: Terminal Settings
+	********************************************************************************************/
+	{
+		"context": "Terminal",
+		"bindings": {
+			"ctrl-\\": "terminal_panel::Toggle"
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: FileTree Settings
-  ********************************************************************************************/
-  {
-    "context": "ProjectPanel && not_editing",
-    "bindings": {
-      "space n": "project_panel::Toggle",
+	/********************************************************************************************
+	* NOTE: FileTree Settings
+	********************************************************************************************/
+	{
+		"context": "ProjectPanel && not_editing",
+		"bindings": {
+			"space n": "project_panel::Toggle",
 
-      "h": "project_panel::CollapseSelectedEntry",
-      "l": "project_panel::ExpandSelectedEntry",
+			"h": "project_panel::CollapseSelectedEntry",
+			"l": "project_panel::ExpandSelectedEntry",
 
-      "y": "project_panel::Copy",
+			"y": "project_panel::Copy",
 
-      "n d": "project_panel::NewDirectory",
-      "n f": "project_panel::NewFile",
+			"n d": "project_panel::NewDirectory",
+			"n f": "project_panel::NewFile",
 
-      "enter": "project_panel::OpenPermanent",
-      "s enter": "project_panel::OpenSplitVertical"
-    }
-  },
-  {
-    "context": "Workspace && vim_mode == normal",
-    "unbind": {
-      "ctrl-shift-e": "project_panel::ToggleFocus"
-    }
-  },
+			"enter": "project_panel::OpenPermanent",
+			"s enter": "project_panel::OpenSplitVertical"
+		}
+	},
+	{
+		"context": "Workspace && vim_mode == normal",
+		"unbind": {
+			"ctrl-shift-e": "project_panel::ToggleFocus"
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: FileTree Settings
-  ********************************************************************************************/
-  {
-    "context": "",
-    "bindings": {
-      "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrevious"
-    }
-  },
+	/********************************************************************************************
+	* NOTE: FileTree Settings
+	********************************************************************************************/
+	{
+		"context": "",
+		"bindings": {
+			"ctrl-j": "menu::SelectNext",
+			"ctrl-k": "menu::SelectPrevious"
+		}
+	},
 
-  /********************************************************************************************
-  * NOTE: AI Settings
-  ********************************************************************************************/
-  {
-    "context": "Editor && vim_mode == normal && !menu",
-    "bindings": {
-      "space c o p": "agent::Toggle"
-    }
-  }
-]
+	/********************************************************************************************
+	* NOTE: Git Settings
+	********************************************************************************************/
+	{
+		"context": "Editor && vim_mode == normal && !menu",
+		"bindings": {
+			"space g i t": "git_panel::Toggle"
+
+		}
+	},
+
+	/********************************************************************************************
+	* NOTE: AI Settings
+	********************************************************************************************/
+	{
+		"context": "Editor && vim_mode == normal && !menu",
+		"bindings": {
+			"space c o p": "agent::Toggle"
+		}
+	}
+			]
 
